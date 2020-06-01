@@ -1,0 +1,54 @@
+<!--pages/index/select_city/index.wxml-->
+<view class="select-city">
+  <!-- 搜索 -->
+  <view class='search b-f acea-row row-between-wrapper'>
+    <view class='input acea-row row-between-wrapper'>
+      <view class=" acea-row row-middle">
+        <image src="../../../images/search.png"></image>
+        <input type='text' value='{{searchValue}}' focus="{{focus}}" placeholder='城市/拼音' placeholder-class='placeholder' bindinput="goSearch"></input>
+      </view>
+      <image src="../../../images/close.png" bindtap='searchBut'></image>
+    </view>
+    <view class='bnt t-r' bindtap='searchBut'>取消</view>
+  </view>
+  <!-- 城市 -->
+  <view class="city-list" hidden="{{searchValue}}">
+    <view class="city-left">
+      <scroll-view scroll-y="true" style="height:1334rpx;" scroll-into-view="{{scrollTopId}}" scroll-with-animation="true" enable-back-to-top="true">
+        <view class="city-locate-title">当前：{{city}}</view>
+        <view class="nearby-city">
+          <view class='nearby-city-title'>定位/最近访问</view>
+          <view class="new-city-box">
+            <view class='new-city-text acea-row row-center-wrapper' wx:for='{{nearbycity}}' wx:key='this' data-types='new' catchtap='cityTap' data-val='{{item}}'>
+              <image src="{{item.cityImg}}" wx:if="{{item.cityImg}}"></image>{{item.cityName}}</view>
+          </view>
+        </view>
+        <view class='new-city'>
+          <view class='new-city-title' id="hot">热门城市</view>
+          <view class='new-city-box'>
+            <text class='new-city-text' wx:for='{{hotCityData}}' wx:key='key' data-fullname="{{item.fullname}}" data-lat="{{item.location.lat}}" data-lng="{{item.location.lng}}" bindtap='selectCity'>{{item.fullname}}</text>
+          </view>
+        </view>
+        <view class='city-list-box'>
+          <view class='new-city-title'>所有城市</view>
+          <view class='item' wx:for='{{cityData}}' wx:for-index="idx" wx:for-item="group" wx:key="key">
+            <view class='city-first-letter' id='{{idx}}'>{{idx}}</view>
+            <view class='city-name' wx:for='{{group}}' wx:key="key" data-fullname="{{item.fullname}}" data-lat="{{item.location.lat}}" data-lng="{{item.location.lng}}" bindtap='selectCity'>{{item.fullname}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='city-right' bindtouchstart="tStart" bindtouchend="tEnd" catchtouchmove="tMove">
+      <text class='letter-item' wx:for='{{_py}}' wx:key='key' bindtouchstart="getPy" bindtouchend="setPy" id="{{item}}">{{item == 'hot' ? "最近热门" : item}}</text>
+    </view>
+  </view>
+
+  <!-- 输入城市后 -->
+  <view class="city-list">
+    <view class="city-left">
+      <scroll-view scroll-y style='width:100%;height:100%;' scroll-with-animation scroll-into-view='{{cityListId}}'>
+        <view class="city-locate-title" catchtap='cityTap'>{{searchValue}}</view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

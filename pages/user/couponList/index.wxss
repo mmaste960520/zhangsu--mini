@@ -1,0 +1,16 @@
+page{background:#fff;}
+.coupon{padding: 20rpx 30rpx 30rpx 30rpx;}
+.coupon .item{margin-bottom: 20rpx;position: relative;}
+.coupon .item .circle{width: 40rpx;height: 40rpx;border-radius: 50%;background:#fff;}
+.coupon .item .circle1{border-bottom: 2rpx solid #F7CDB1; position: absolute;top:-20rpx;right:180rpx;}
+.coupon .item .circle2{border-top: 2rpx solid #F7CDB1; position: absolute;bottom:-20rpx;right:180rpx;}
+.coupon .item .item-l{width:470rpx;height:200rpx;background:#fff;border: 2rpx solid #F7CDB1;border-right:none;border-radius: 15rpx 0 0 15rpx;padding: 30rpx 20rpx;}
+.coupon .item .item-l .pictrue{width:130rpx;height: 130rpx;}
+.coupon .item .item-l .pictrue image{width:100%;height:100%;}
+.coupon .item .item-l .text{width:279rpx;margin-left: 20rpx;}
+.coupon .item .item-l .text .title view:first-child{width:200rpx;margin-bottom: 5rpx;}
+.coupon .item .item-l .text .time{margin-top: 25rpx;}
+.coupon .item .item-r{width:200rpx;height:200rpx;background-image:linear-gradient(to right,#FBE9C9 0%,#EEAE4B 100%);border: 2rpx solid #F7CDB1;border-radius: 0 15rpx 15rpx 0;color:#CE4E63;padding:20rpx 0;}
+.coupon .item .item-r .title{background:#FBE9C9;margin: 0 25rpx 5rpx 25rpx;border-radius: 30rpx;padding:0 20rpx;}
+.btn{padding: 40rpx 30rpx 40rpx 30rpx;}
+.btn view{background:#CE4E63;color:#fff;padding:30rpx 0;text-align: center;border-radius: 50rpx;}

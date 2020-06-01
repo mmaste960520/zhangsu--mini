@@ -1,0 +1,217 @@
+<!--pages/inviteDealer/dealer/index.wxml-->
+<view class="dealer">
+  <form bindsubmit="saveData" report-submit="true">
+    <!-- 基础信息 -->
+    <view class="base dealer-item">
+      <view class="title">基本信息</view>
+      <view class='base-item b-f'>
+        <view class='item acea-row row-between-wrapper'>
+          <view class='name'>
+            店铺名称
+            <text class="star">*</text>
+          </view>
+          <input type='text' placeholder='请输入店铺名称' value="" placeholder-style="color:#333333;"></input>
+        </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view class='name'>
+            店铺电话
+            <text class="star">*</text>
+          </view>
+          <input type='text' placeholder='029-23565264' value='' placeholder-style="color:#333333;"></input>
+        </view>
+        <view class='item acea-row row-between-wrapper address'>
+          <view class='name'>
+            店铺地址
+            <text class="star">*</text>
+          </view>
+          <input type='text' placeholder='{{address}}' placeholder-style="color:#333333;" value=''></input>
+          
+          <button bindtap='map' class="onelist-hidden"><image src="../../../images/location.png" ></image></button>
+        </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view class='name'>
+            营业时间
+            <text class="star">*</text>
+          </view>
+          <input type='text' placeholder='6:30-10:30； 17:30-19:30' value="" placeholder-style="color:#333333;"></input>
+        </view>
+        <view class='item acea-row row-between-wrapper industry'>
+          <view class='name'>
+            行业分类
+          </view>
+          <input type='text' placeholder='{{industry}}' value='' placeholder-style="color:#333333;" disabled="disabled"></input>
+          <text class="iconfont icon-xiala" bindtap="selectIndustry"></text>
+        </view>
+      </view>
+    </view>
+    <!-- 店铺门头 -->
+    <view class="doorway dealer-item">
+      <view class="title">
+        店铺门头
+        <text class="star">*</text>
+      </view>
+      <view class="uploadPic b-f acea-row row-middle" bindtap='doorwayUploadpic'>
+        <view class='pictrue acea-row row-center-wrapper row-column'>
+          <text class='iconfont icon-jia1' wx:if="{{doorwayImages==''}}"></text>
+          <block wx:for="{{doorwayImages}}" wx:key="*this">
+            <view class="q-image-wrap">
+              <!-- 图片缩略图  -->
+              <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <!-- 店铺相册 -->
+    <view class="album dealer-item">
+      <view class="title">
+        店铺相册
+        <text class="remark">（200*200）至少上传一张</text>
+      </view>
+      <view class="uploadPic b-f acea-row row-middle"  bindtap='albumUploadpic'>
+        <view class='pictrue acea-row row-center-wrapper row-column'>
+          <text class='iconfont icon-jia1' wx:if="{{albumImages==''}}"></text>
+          <block wx:for="{{albumImages}}" wx:key="*this">
+            <view class="q-image-wrap">
+              <!-- 图片缩略图  -->
+              <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <!-- 商家微信 -->
+    <view class="wx dealer-item">
+      <view class="title">
+        商家微信
+        <text class="remark">（430*430）上传商家微信二维码</text>
+        <text class="star">*</text>
+      </view>
+      <view class="uploadPic b-f acea-row row-middle"  bindtap='wxUploadpic'>
+        <view class='pictrue acea-row row-center-wrapper row-column'>
+          <text class='iconfont icon-jia1' wx:if="{{wxImages==''}}"></text>
+          <block wx:for="{{wxImages}}" wx:key="*this">
+            <view class="q-image-wrap">
+              <!-- 图片缩略图  -->
+              <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <!-- 商家服务 -->
+    <view class="service dealer-item">
+      <view class="title">商家服务</view>
+      <view class="textarea">
+        <textarea placeholder='请输入店铺食品安全保障说明' placeholder-style="color:#333333;"></textarea>
+      </view>
+    </view>
+    <!-- 店铺描述 -->
+    <view class="describe dealer-item">
+      <view class="title">店铺描述</view>
+      <view class="textarea">
+        <textarea placeholder='请输入店铺介绍文字或者店铺特色标签' placeholder-style="color:#333333;"></textarea>
+      </view>
+    </view>
+    <!-- 店主信息 -->
+    <view class="shopkeeper dealer-item">
+      <view class="title">
+        店主信息
+        <text class="star">*</text>
+      </view>
+      <view class='shopkeeper-item b-f'>
+        <view class='item acea-row row-between-wrapper'>
+          <view class='name'>
+            联系人
+            <text class="star">*</text>
+          </view>
+          <input type='text' placeholder='请输入店主姓名' value="" placeholder-style="color:#333333;"></input>
+        </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view class='name'>
+            手机
+            <text class="star">*</text>
+          </view>
+          <input type='text' placeholder='15265453698' value='' placeholder-style="color:#333333;"></input>
+        </view>
+      </view>
+      <view class="title b-f">
+        审核资料
+        <text class="star">*</text>
+        <text class="remark">（上传营业执照和店主身份证）(600*800)
+        <text class="f-22">或者更大尺寸</text>
+        </text>
+      </view>
+      <view class="uploadPic b-f acea-row row-middle">
+        <view class="uploadPic-item">
+          <view class='pictrue acea-row row-center-wrapper row-column'>
+            <text class='iconfont icon-jia1'></text>
+          </view>
+          <view class="uploadPic-title">营业执照</view>
+        </view>
+        <view class="uploadPic-item">
+          <view class='pictrue acea-row row-center-wrapper row-column'>
+            <text class='iconfont icon-jia1'></text>
+          </view>
+          <view class="uploadPic-title">
+            身份证
+            <text>（正面）</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 邀请码 -->
+    <view class="code">
+      <view class='code-item b-f'>
+        <view class='item acea-row row-between-wrapper'>
+          <view class='name'>邀请码</view>
+          <input type='text' placeholder='请输入邀请码' value="" placeholder-style="color:#333333;"></input>
+        </view>
+      </view>
+    </view>
+    <!-- 付费入驻 -->
+    <view class="pay dealer-item">
+      <view class="title">
+        付费入驻
+        <text class="star">*</text>
+      </view>
+      <radio class="radio b-f" value="" checked="checked">
+        <view>
+          商家会员限时优惠（1年/
+          <text class="price">￥388</text> ）
+          <text class="line-price">原价：<text style="text-decoration:line-through;">￥988 </text>
+          </text>
+        </view>
+      </radio>
+    </view>
+    <!-- 阅读并同意 -->
+    <view class="agree">
+      <radio class="radio " value="" checked="checked">
+        <view>
+          <text style="color:#999;">阅读并同意</text>
+          <text bindtap="goContract">《商家入驻合同》</text>
+        </view>
+      </radio>
+    </view>
+    <view class="btn">
+      <view>提交</view>
+    </view>
+  </form>
+
+  <!-- 弹框 -->
+  <view class="mask" hidden='{{ispopup}}'></view>
+  <view class="popup" hidden='{{ispopup}}'>
+    <view style="border-bottom:2rpx solid #eee;padding-bottom:50rpx;">
+      <view class="title">选择行业分类</view>
+      <view class="btn" bindtap="close">确定</view>
+    </view>
+    <picker-view indicator-style="height: 50px;" indicator-class="picker-box" style="width: 100%; height: 180px;padding:0 120rpx;box-sizing:border-box;color:#666;" value="{{value}}" bindchange="booktype">
+      <picker-view-column>
+        <view wx:for="{{array}}" wx:key="{{index}}" class="picker-item acea-row row-between-wrapper {{value==index?'active' : ''}}">
+          <text>{{item.title}}</text>
+          <text>{{item.sub}}</text>
+        </view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>

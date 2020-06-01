@@ -1,0 +1,7 @@
+page{background: #fff;}
+/* 邀请商家说明 */
+.inviteDealer .inviteDealer-title{text-align: center;padding: 30rpx;border-bottom: 2rpx solid #ccc;position: relative;}
+.inviteDealer .inviteDealer-title .btn{position: absolute;right: 30rpx;top: 20rpx;background: #CE4E63;color:#fff;padding: 10rpx 30rpx;border-radius: 10rpx;}
+.inviteDealer .explain .title{text-align: center;font-size: 32rpx;color:#CE4E63;margin-top: 40rpx;}
+.inviteDealer .explain .sub{margin: 40rpx 30rpx}
+.inviteDealer .explain .item{margin: 0 30rpx 40rpx 30rpx;}

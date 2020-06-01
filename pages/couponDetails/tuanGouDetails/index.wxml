@@ -1,0 +1,92 @@
+<view>
+  <!-- 轮播 -->
+  <view class='index-bg'>
+    <swiper indicator-dots="true" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#CE4E63" indicator-active-color="#fff">
+      <block wx:for="{{imgUrls}}" wx:key>
+        <swiper-item>
+          <navigator class='slide-navigator acea-row row-between-wrapper' hover-class='none'>
+            <image src="{{item.adv_code}}" class="slide-image" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="coupon_info">
+    <view class="title">美味海鲜粥美味海（长安区店）</view>
+    <view class="price">
+      券后价：￥<text class="quanPrice">78</text>
+      <text class="original">原价：<text class="originalCost">￥112</text></text>
+    </view>
+    <view class="vipPrice">会员价 <text>再减5元</text></view>
+    <view class="vipQuanPrice">
+      会员券后：<text>￥</text><text class="afterPrice">73</text>
+    </view>
+  </view>
+
+  <view class="shop">
+    <view class="title">商家信息</view>
+    <view class="acea-row row-middle">
+      <image src="../../../images/goodImg2.png" class="goodsImg"  bindtap="goStoreDetail"></image>
+      <view class="shop_info">
+        <view>
+          <text class="tit font_overflow"  bindtap="goStoreDetail">海鲜火锅店海鲜火锅店...</text>
+          <text class="followShop"  bindtap="follow"><text class="iconfont icon-guanzhu"></text>{{follow==0?'关注店铺':'已关注'}}</text>
+        </view>
+        <view class="location clearfix">
+          <view class="font_overflow" bindtap='getLocation'>
+            <text class="iconfont icon-dingwei"></text> 
+            <text>{{address}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="kefuTel" bindtap="call">
+        <text class="iconfont icon-iconset0215"></text>
+      </view>
+    </view>
+  </view>
+
+  <view class="useRule">
+    <view class="title">套餐详情</view>
+    <view class="setMeal clearfix">
+      <view class="tit">锅底2选1</view>
+      <view>· 清油鸳鸯锅 (麻辣、香辣、微辣)（1份） <text>￥78</text></view>
+      <view>· 牛油鸳鸯锅 (麻辣、香辣、微辣)（1份） <text>￥78</text></view>
+    </view>
+
+    <view class="setMeal clearfix">
+      <view class="tit">荤菜</view>
+      <view>· 霸王牛肉+内蒙1号肥牛（1份） <text>￥35</text></view>
+      <view>· 绿色毛肚（1份） <text>￥24</text></view>
+      <view>· 鱼豆腐+虾饺（1份） <text>￥8</text></view>
+    </view>
+
+    <view class="setMeal clearfix">
+      <view class="tit">素菜</view>
+      <view>· 菠菜+茼蒿（1份） <text>￥12</text></view>
+      <view>· 土豆片+海带（1份） <text>￥12</text></view>
+      <view>· 手抓饼（1份） <text>￥16</text></view>
+    </view>
+
+    <view class="setMeal clearfix">
+      <view class="tit">主食，料碗</view>
+      <view>· 料碗（2份） <text>￥16</text></view>
+      <view>· 一次性筷头（2份） <text>￥2</text></view>
+    </view>
+  </view>
+
+  <view class="useRule" style="padding-bottom: 130rpx;">
+    <view class="title">使用规则</view>
+    <view class="rule">
+      <text>1、有效期：2019-7-1至2019-7-4日；</text>
+      <text>2、领取后请尽快到店使用，以免优惠券过期不能使用，如果不能 及时使用可赠送给您的好友；</text>
+      <text>3、有效期：2019-7-1至2019-7-4日；</text>
+      <text>4、领取后请尽快到店使用，以免优惠券过期不能使用；</text>
+      <text>5、有效期：2019-7-1至2019-7-4日；</text>
+    </view>
+    <view class="moreRule" bindtap=""><text class="iconfont icon-xiala"></text>更多规则</view>
+  </view>
+
+  <!-- 快捷导航 -->
+  <bottomNav id=""></bottomNav>
+</view>

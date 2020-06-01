@@ -1,0 +1,32 @@
+<view>
+  <!-- 已开通 -->
+  <view class="userInfo acea-row row-middle">
+    <image src="../../../images/avatar.png" class="userPortrait"></image>
+    <view>
+      <view>心情（微信名）</view>
+      <text>您还不是会员，可立即开通</text>
+    </view>
+  </view>
+
+  <!-- 未开通 -->
+  <view class="vip_crad">
+    <image src="../../../images/vip_crad.png" mode="widthFix"></image>
+
+    <view class="vipPrice">
+      <view>掌速卡会员（365天）</view>
+      <text>99元</text>
+    </view>
+  </view>
+
+  <view class="useRule">
+    <view class="title">使用规则</view>
+    <view class="rule">
+      <text>1、开通之后只可领取掌速卡中的优惠券，其他页面不适用，请知悉；</text>
+      <text>2、开通之后只可领取掌速卡中的优惠券，其他页面不适用，请知悉；</text>
+    </view>
+    <button class="goOpen">立即开通</button>
+  </view>
+
+  
+  
+</view>

@@ -1,0 +1,25 @@
+page{background:#fff;}
+.myCoupon{background: #CE4E63;margin: 30rpx;border-radius: 10rpx;padding:80rpx 40rpx 40rpx 40rpx;}
+.myCoupon-content{ background:#fff;border-radius: 10rpx;}
+.myCoupon-content .content-top{padding: 30rpx 0;margin:0 30rpx;border-bottom: 2rpx dashed #E9A327;position: relative;}
+.myCoupon-content .content-top .circle{width: 40rpx;height: 40rpx;border-radius: 50%;background:#CE4E63;}
+.myCoupon-content .content-top .circle1{ position: absolute;bottom:-20rpx;left:-50rpx;}
+.myCoupon-content .content-top .circle2{ position: absolute;bottom:-20rpx;right:-50rpx;}
+.myCoupon-content .content-top .pictrue{width:100rpx;height: 100rpx;margin-top: -75rpx;margin-bottom: 30rpx;}
+.myCoupon-content .content-top .pictrue image{width:100%;height: 100%;}
+.myCoupon-content .content-top .code{width:200rpx;height: 200rpx;margin: 20rpx 0;}
+.myCoupon-content .content-top .code image{width:100%;height: 100%;}
+.myCoupon-content .content-top .sub{background:#FAE4E8;color:#CE4E63;padding:3rpx 40rpx;border-radius: 30rpx;margin-top: 20rpx;}
+.myCoupon-content .content-bottom{padding: 50rpx 30rpx 30rpx 30rpx;}
+.myCoupon-content .content-bottom .store .pictrue{width: 180rpx;height: 180rpx;}
+.myCoupon-content .content-bottom .store .pictrue image{width:100%;height: 100%;border-radius: 8rpx;}
+.myCoupon-content .content-bottom .store .text{width: 350rpx;margin-left: 20rpx;}
+.myCoupon-content .content-bottom .store .text .adress{padding: 20rpx 0;}
+.myCoupon-content .content-bottom .store .text .adress image{width:50rpx;height: 50rpx;}
+.myCoupon-content .content-bottom .store .text .adress .tel{width: 40rpx;height: 40rpx;}
+.myCoupon-content .content-bottom .store .text .adress .detail{width: 175rpx;}
+.myCoupon-content .content-bottom .store .text .follow{border-radius: 10rpx;border: 2rpx solid #CE4E63;color:#CE4E63;padding: 5rpx 0;width:180rpx;text-align: center;}
+.myCoupon-content .content-bottom .btn{padding: 150rpx 80rpx 0 80rpx;}
+.myCoupon-content .content-bottom .btn button{background:#CE4E63;color:#fff;padding: 20rpx 0;text-align: center;border-radius: 50rpx;font-size: 30rpx;}
+.myCoupon-content .content-bottom .store .text .font-color{margin: 7rpx 0;}
+.myCoupon-content .content-bottom .store .text .font-color .line-price{margin-left: 20rpx;}

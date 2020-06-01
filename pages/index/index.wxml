@@ -1,0 +1,113 @@
+<!--index.wxml-->
+<view class="index">
+  <!-- 搜索 -->
+  <view class='search b-f acea-row row-between-wrapper'>
+    <view class='bnt' bindtap='goSelectCity'>
+      西安
+      <image src="../../images/drop.png" class="drop"></image>
+    </view>
+    <view class='input acea-row row-middle'>
+      <image src="../../images/search.png"></image>
+      <input type='text' value='{{searchValue}}' focus="{{focus}}" placeholder='请输入优惠券、商家名、品类...' placeholder-class='placeholder' bindtap="goSearch"></input>
+    </view>
+    <view class="icon acea-row row-between-wrapper">
+      <image src="../../images/tel.png" mode="widthFix" bindtap="call"></image>
+      <image src="../../images/help.png" mode="widthFix" bindtap="goInviteDealer"></image>
+    </view>
+  </view>
+  <!-- 菜单 -->
+  <view class='nav acea-row b-f'>
+    <block wx:for="{{menus}}" wx:key>
+      <navigator class='item' url='{{item.url}}' hover-class='none'>
+        <view class='pictrue'>
+          <image src='{{item.pic}}'></image>
+        </view>
+        <view>{{item.name}}</view>
+      </navigator>
+    </block>
+  </view>
+  <!-- 轮播 -->
+  <view class='index-bg'>
+    <swiper indicator-dots="true" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#CE4E63" indicator-active-color="#fff">
+      <block wx:for="{{imgUrls}}" wx:key>
+        <swiper-item>
+          <navigator class='slide-navigator acea-row row-between-wrapper' hover-class='none'>
+            <image src="{{item.adv_code}}" class="slide-image" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 加入会员 -->
+  <view class="join" bindtap="goJoinMember">
+    <view class="join-item acea-row row-between-wrapper">
+      <view class="title">加入会员</view>
+      <view class="content">加入会员,每月可多领20元优惠券</view>
+    </view>
+  </view>
+  <!-- 为你推荐 -->
+  <view class="recommend acea-row row-middle b-f">
+    <view class="item active">为你推荐</view>
+    <view class="item">5公里</view>
+    <view class="item">10公里</view>
+    <view class="item">市区</view>
+  </view>
+  <!-- 券列表-两排 -->
+  <view class='wrapper'>
+    <view class='couponList clear'>
+      <block wx:for="{{couponList}}" wx:key>
+        <view class='item b-f'>
+          <view class="top acea-row row-between-wrapper">
+            <view class="top-r font-color">
+              <view class="top-r-price f-22" wx:if="{{item.coupon_sub}}">
+                ￥
+                <text class="f-26 f-w text">{{item.coupon_title}}</text>
+              </view>
+              <view class="top-r-price f-22" wx:if="{{!item.coupon_sub}}">
+                <text class="f-26">{{item.coupon_title}}</text>
+              </view>
+              <view class="top-r-sub f-22">{{item.coupon_sub}}</view>
+            </view>
+            <navigator class='top-l' url='{{item.url}}'>
+              免费领取
+            </navigator>
+          </view>
+          <view class="line">
+            <image src="../../images/line.png"></image>
+          </view>
+          <view class='pictrue'>
+            <image src='{{item.image}}'></image>
+          </view>
+          <view class='underline'>
+            <view class='text'>
+              <view class='twolist-hidden f-24'>{{item.title}}</view>
+              <view class="acea-row row-between-wrapper" wx:if="{{item.vip_price}}">
+                <view class="vip acea-row row-between-wrapper f-22">
+                  <view>会员</view>
+                  <view>￥{{item.vip_price}}</view>
+                </view>
+                <view class='money font-color'>
+                  <text class='num' wx:if="{{item.line_price}}">￥{{item.line_price}}</text>
+                  <text class='num2'>￥{{item.price}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="store acea-row row-between-wrapper f-22">
+            <view>{{item.store_title}}</view>
+            <view>{{item.distance}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!-- 暂无商家，点击合作 -->
+  <view class="noStore" hidden="{{couponList}}">
+    <view class="title">附近暂无商家，火热招商中</view>
+    <view class="btn" bindtap="goDealer">
+      <text>点此合作</text>
+    </view>
+  </view>
+</view>
+<!-- 授权获取手机号 -->
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"></button>

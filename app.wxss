@@ -1,0 +1,112 @@
+/**app.wxss**/
+@import '/css/style.wxss';
+@import '/font/iconfont.wxss';
+page{font-size:28rpx;background-color: #F7F7F7; color: #333;}
+view{box-sizing:border-box;}
+.acea-row{display:flex;flex-wrap:wrap;}
+.acea-row.row-top{align-items:flex-start;}
+.acea-row.row-middle{align-items:center;}
+.acea-row.row-bottom{align-items:flex-end;}
+.acea-row.row-left{justify-content:flex-start;}
+.acea-row.row-center{justify-content:center;}
+.acea-row.row-right{justify-content:flex-end;}
+.acea-row.row-between{justify-content:space-between;}
+.acea-row.row-around{justify-content:space-around;}
+.acea-row.row-column{flex-direction:column;}
+.acea-row.row-column-between{flex-direction:column;justify-content:space-between;}
+.acea-row.row-column-around{flex-direction:column;justify-content:space-around;}
+.acea-row.row-center-wrapper{align-items:center;justify-content:center;}
+.acea-row.row-between-wrapper{align-items:center;justify-content:space-between;}
+.font-color{color:#CE4E63!important;}
+.font-6{color:#666!important;}
+.font-9{color:#999!important;}
+.line-price{text-decoration: line-through}
+.mask{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#000;opacity:0.5;z-index:999;}
+button{padding:0;margin:0;line-height:normal;background-color:#fff;}
+button::after{border:0;}
+.t-l {text-align: left;}
+.t-c {text-align: center;}
+.t-r {text-align: right;}
+.b-f {background: #fff;}
+.tf-180 {-moz-transform: rotate(-180deg);-ms-transform: rotate(-180deg);-o-transform: rotate(-180deg);transform: rotate(-180deg);}
+.tf-90 {-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);-o-transform: rotate(90deg);transform: rotate(90deg);}
+.fl {float: left;}
+.fr {float: right;}
+.clear::after {clear: both;content: " ";display: table;}
+.oh {overflow: hidden;}
+.f-48 {
+ font-size: 48rpx;
+}
+.f-36 {
+  font-size: 36rpx;
+}
+
+.f-34 {
+  font-size: 34rpx;
+}
+
+.f-32 {
+  font-size: 32rpx;
+}
+.f-30 {
+  font-size: 30rpx;
+}
+.f-28 {
+  font-size: 28rpx;
+}
+
+.f-26 {
+  font-size: 26rpx;
+}
+.f-24 {
+  font-size: 24rpx;
+}
+
+.f-22 {
+  font-size: 22rpx;
+}
+
+.f-20 {
+  font-size: 20rpx;
+}
+.f-w {
+  font-weight: 700;
+}
+
+.f-n {
+  font-weight: 400;
+}
+.onelist-hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.twolist-hidden {
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+/* 暂无更多 */
+
+.no-more {
+  text-align: center;
+  color: #666;
+  padding: 10px 0;
+  font-size: 22rpx;
+}
+
+/* 更多 */
+.more{
+  text-align: center;
+  margin: 0 0 80rpx 0;
+  font-size: 24rpx;
+  color:#999;
+}
+/* 单选 */
+radio .wx-radio-input{border-radius:50%;width:25rpx;height:25rpx;}
+radio .wx-radio-input.wx-radio-input-checked{border: 1px solid #CE4E63 !important;background-color: #CE4E63 !important;}
+radio .wx-radio-input.wx-radio-input-checked::before{font-size:26rpx;}

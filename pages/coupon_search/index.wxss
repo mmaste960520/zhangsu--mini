@@ -1,0 +1,8 @@
+/* 搜索 */
+.search{padding:20rpx 60rpx;}
+.search .input{width:100%;background-color:#EFEFF4;border-radius:33rpx;padding:0 25rpx;box-sizing:border-box;height:66rpx;}
+.search .input input{width:390rpx;font-size:24rpx;}
+.search .input .placeholder{color:#bbb;}
+.search .input image{width:30rpx;height: 30rpx;margin-right: 20rpx;}
+.search-title{text-align: center;font-size: 24rpx;color:#666;}
+.wrapper{margin-top: 20rpx;}

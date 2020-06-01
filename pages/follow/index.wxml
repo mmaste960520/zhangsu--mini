@@ -1,0 +1,27 @@
+<!--pages/follow/index.wxml-->
+<view class="follow">
+  <view class="item acea-row" bindtap="goStoreDetail">
+    <view class="picture">
+      <image src="../../images/goodImg2.png"></image>
+    </view>
+    <view class="text">
+      <view class="text-top acea-row row-between-wrapper">
+        <view class="title onelist-hidden">海鲜火锅店</view>
+        <view class="range">865m</view>
+      </view>
+      <view class="address onelist-hidden">西安市高新区科技路西安市高西安市高</view>
+    </view>
+  </view>
+  <view class="item acea-row" bindtap="goStoreDetail">
+    <view class="picture">
+      <image src="../../images/goodImg2.png"></image>
+    </view>
+    <view class="text">
+      <view class="text-top acea-row row-between-wrapper">
+        <view class="title onelist-hidden">海鲜火锅店</view>
+        <view class="range">865m</view>
+      </view>
+      <view class="address onelist-hidden">西安市高新区科技路西安市高西安市高</view>
+    </view>
+  </view>
+</view>

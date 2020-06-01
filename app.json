@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/select_city/index",
+    "pages/more_classify/index",
+    "pages/coupon_search/index",
+    "pages/concess/index",
+    "pages/user/index",
+    "pages/follow/index",
+    "pages/inviteDealer/index",
+    "pages/inviteDealer/code/index",
+    "pages/inviteDealer/dealer/index",
+    "pages/inviteDealer/contract/index",
+    "pages/card/index",
+    "pages/card/openVip/openVip",
+    "pages/couponDetails/index",
+    "pages/couponDetails/tuanGouDetails/index",
+    "pages/couponDetails/giveCoupon/index",
+    "pages/components/bottomNav/bottomNav",
+    "pages/joinMember/index",
+    "pages/shopDetails/index",
+    "pages/user/couponList/index",
+    "pages/user/myCoupon/index",
+    "pages/login/login"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#CE4E63",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-active.png"
+      },
+      {
+        "pagePath": "pages/concess/index",
+        "text": "限时特惠",
+        "iconPath": "images/concess.png",
+        "selectedIconPath": "images/concess-active.png"
+      },
+      {
+        "pagePath": "pages/card/index",
+        "text": "掌速卡",
+        "iconPath": "images/card.png",
+        "selectedIconPath": "images/card-active.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user-active.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "debug": false,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于为您提供更合适您的服务"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

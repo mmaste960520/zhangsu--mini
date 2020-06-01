@@ -1,0 +1,61 @@
+<!--pages/coupon_search/index.wxml-->
+<view class="coupon_search">
+  <!-- 搜索 -->
+  <view class='search acea-row row-between-wrapper'>
+    <view class='input acea-row row-middle'>
+      <image src="../../images/search.png"></image>
+      <input type='text' value='{{searchValue}}' focus="{{focus}}" placeholder='满减券' placeholder-class='placeholder' bindblur='setValue'></input>
+    </view>
+  </view>
+  <!-- 为您搜到以下优惠券 -->
+  <view class="search-title">为您搜到以下优惠券</view>
+    <!-- 券列表-两排 -->
+  <view class='wrapper'>
+    <view class='couponList clear'>
+      <block wx:for="{{couponList}}" wx:key>
+        <view class='item b-f'>
+          <view class="top acea-row row-between-wrapper">
+            <view class="top-r font-color">
+              <view class="top-r-price f-22" wx:if="{{item.coupon_sub}}">
+                ￥
+                <text class="f-26 f-w text">{{item.coupon_title}}</text>
+              </view>
+              <view class="top-r-price f-22" wx:if="{{!item.coupon_sub}}">
+                <text class="f-26">{{item.coupon_title}}</text>
+              </view>
+              <view class="top-r-sub f-22">{{item.coupon_sub}}</view>
+            </view>
+            <view class="top-l">免费领取</view>
+          </view>
+          <view class="line">
+            <image src="../../images/line.png"></image>
+          </view>
+          <view class='pictrue'>
+            <image src='{{item.image}}'></image>
+          </view>
+          <view class='underline'>
+            <view class='text'>
+              <view class='twolist-hidden f-24'>{{item.title}}</view>
+              <view class="acea-row row-between-wrapper" wx:if="{{item.vip_price}}">
+                <view class="vip acea-row row-between-wrapper f-22" style="background-image: url('/images/vipbg.png');background-size:100% 100%;width:140rpx;">
+                  <view>会员</view>
+                  <view>￥{{item.vip_price}}</view>
+                </view>
+                <view class='money font-color'>
+                  <text class='num' wx:if="{{item.line_price}}">￥{{item.line_price}}</text>
+                  <text class='num2'>￥{{item.price}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="store acea-row row-between-wrapper f-22">
+            <view>{{item.store_title}}</view>
+            <view>{{item.distance}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!-- 暂无更多 -->
+  <view class="no-more">暂无更多</view>
+</view>

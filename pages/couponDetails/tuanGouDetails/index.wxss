@@ -1,0 +1,181 @@
+.clearfix:after{display: block;	content: ""; clear: both; height: 0; visibility: hidden;}
+.font_overflow {overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+/* 轮播 */  
+.index-bg{width:100%;height:290rpx;position:relative;}
+.index-bg swiper{width:100%;height:100%;position:relative;}
+.index-bg .slide-navigator{width:100%;height:100%;}
+.index-bg .slide-navigator .slide-image{width:100%;height:100%;}
+.index-bg .wx-swiper-dot{width:15rpx;height:15rpx;border-radius:50%;}
+.index-bg .wx-swiper-dots.wx-swiper-dots-horizontal{margin-bottom:5rpx;}
+
+.coupon_info {
+  width: auto;
+  min-height: 200rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  padding: 30rpx;
+  font-size: 24rpx;
+}
+.coupon_info .title {
+  color: #333333;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.coupon_info .price {
+  color: #CE4E63;
+  font-size: 24rpx;
+  margin: 15rpx 0;
+}
+.quanPrice {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.original {
+  color: #999999;
+  margin-left: 30rpx;
+}
+.originalCost {
+  text-decoration: line-through;
+}
+.coupon_info .vipPrice {
+  width: 240rpx;
+  padding: 5rpx 10rpx;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAAAkBAMAAABF1KqYAAAAD1BMVEUAAAC/pVNTSCSKdzsmIBB2KMloAAAAdElEQVRYw+XVQQ3AMAwDwEJImgAohEIYf1TD0KnSPWYC97HskQfpcTEncCk4GbwUHApuBZeC81HwVnD8Dp4KTgYvBW8Ft4JLwcngpeBQcCu4FHztGY/hreBQ8FRwMngpeCu4FVwKvjQhqdr1AQ4FTwVfadcLYCV1tLiVlfEAAAAASUVORK5CYII=');
+  background-size: 100% 100%;
+}
+.coupon_info .vipPrice text {
+  color: #fff;
+  margin-left: 20rpx;
+}
+
+.vipQuanPrice {
+  width: auto;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+  color: #554001;
+  font-size: 24rpx;
+  background-image: linear-gradient(160deg, #E0CC8D 20%,#BFA553 80%);
+  padding: 0 12rpx;
+}
+.vipQuanPrice text {
+  color: #CE4E63;
+}
+.vipQuanPrice .afterPrice {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.shop {
+  width: auto;
+  min-height: 100rpx;
+  background: #fff;
+  padding: 0 30rpx 30rpx 30rpx;
+  margin-top: 20rpx;
+}
+.shop .title {
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #CE4E63;
+  border-bottom: 1px #ccc solid;
+  margin-bottom: 30rpx;
+}
+.shop .rule text {
+  display: block;
+  font-size: 24rpx;
+  color: #333333;
+}
+
+.shop .goodsImg {
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  border-radius: 8rpx;
+}
+.shop .shop_info {
+  width: 400rpx;
+  margin-left: 30rpx;
+  font-size: 26rpx;
+  color: #333333;
+  position: relative;
+  border-right: 1px #ccc solid;
+}
+.shop .shop_info .tit {
+  width: 220rpx;
+  display: inline-block;
+}
+.shop .shop_info .location {
+  margin: 20rpx 0;
+  color: #666666;
+}
+.shop .shop_info .location image {
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+}
+.shop .shop_info .location .iconfont {
+  font-size: 24rpx;
+}
+.shop .shop_info .location view {
+  width: 300rpx;
+}
+.shop .shop_info .followShop {
+  color: #CE4E63;
+  font-size: 24rpx;
+}
+
+.shop .shop_info .followShop .iconfont {
+  font-size: 24rpx;
+}
+
+.shop .kefuTel {
+  width: 140rpx;
+  text-align: center;
+  font-size: 42rpx;
+  color: #CE4E63;
+  font-weight: bold;
+}
+
+.useRule {
+  width: auto;
+  min-height: 100rpx;
+  background: #fff;
+  padding: 0 30rpx 30rpx 30rpx;
+  margin-top: 20rpx;
+}
+.useRule .title {
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1px #CCCCCC solid;
+  margin-bottom: 30rpx;
+  color: #CE4E63;
+}
+.useRule .rule text {
+  display: block;
+  font-size: 24rpx;
+  color: #333333;
+}
+.useRule .moreRule {
+  font-size: 24rpx;
+  text-align: right;
+  margin-top: 10rpx;
+  color: #333333;
+}
+.useRule .moreRule .iconfont {
+  font-size: 20rpx;
+}
+
+.setMeal {
+  font-size: 24rpx;
+  color: #333333;
+}
+.setMeal .tit {
+  font-size: 26rpx;
+  font-weight: 600;
+  margin-bottom: 12rpx;
+}
+.setMeal view text {
+  float: right;
+  margin-bottom: 12rpx;
+  clear: both;
+}

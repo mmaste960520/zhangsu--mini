@@ -1,0 +1,254 @@
+<!--pages/shopDetails/index.wxml-->
+<view class="shop-details">
+  <!-- 顶部 -->
+  <view class="header">
+    <view class="header-bg"></view>
+    <view class="header-item acea-row row-between row-bottom">
+      <view class="item-l">
+        <image src="../../images/love.png"></image>
+      </view>
+      <view class="item-m">
+        <image src="../../images/goodImg2.png"></image>
+      </view>
+      <view class="item-r">
+        <image src="../../images/tel2.png" bindtap="call"></image>
+      </view>
+    </view>
+    <view class="header-text">
+      <view class="f-30">粥宫粥粥宫粥粥宫（长安区店）</view>
+      <view class="font-6">本店菜品丰富，环境优美，空调开放,有WiFi</view>
+      <view>营业中 07:30-21:00</view>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="nav acea-row">
+    <view class="item {{status==0 ? 'on' : ''}}" data-status="0" bindtap="statusClick">优惠</view>
+    <view class="item {{status==1 ? 'on' : ''}}" data-status="1" bindtap="statusClick">评价</view>
+    <view class="item {{status==2 ? 'on' : ''}}" data-status="2" bindtap="statusClick">商家信息</view>
+  </view>
+  <!-- 优惠 -->
+  <view class="discount b-f" wx:if="{{status==0}}">
+    <view class="one-item">
+      <view class="item">
+        <view class="title acea-row row-middle">
+          <image src="../../images/quan.png"></image>
+          <text class="f-22">满减券</text>
+        </view>
+        <view class="acea-row row-between-wrapper content">
+          <view class="content-l">
+            <view class="price">
+              ￥
+              <text class="f-48 f-w">20</text>
+            </view>
+            <view class="sub">满199减20</view>
+            <view class="f-22 font-6">使用日期：2019-7-1至2019-7-4</view>
+          </view>
+          <view class="content-r" bindtap="goCouponDetail">抢购</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="title acea-row row-middle">
+          <image src="../../images/dai.png"></image>
+          <text class="f-22">代金券</text>
+        </view>
+        <view class="acea-row row-between-wrapper content">
+          <view class="content-l">
+            <view class="price">
+              <text class="f-48 f-w">100元代金券</text>
+            </view>
+            <view class="sub">指定商品</view>
+            <view class="f-22 font-6">使用日期：2019-7-1至2019-7-4</view>
+          </view>
+          <view class="content-r" bindtap="goCouponDetail">抢购</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="title acea-row row-middle">
+          <image src="../../images/zhe.png"></image>
+          <text class="f-22">打折券</text>
+        </view>
+        <view class="acea-row row-between-wrapper content">
+          <view class="content-l">
+            <view class="price">
+              ￥
+              <text class="f-48 f-w">8</text> 折
+            </view>
+            <view class="sub">全场8折优惠，立即抢购</view>
+            <view class="f-22 font-6">使用日期：2019-7-1至2019-7-4</view>
+          </view>
+          <view class="content-r" bindtap="goCouponDetail">抢购</view>
+        </view>
+      </view>
+    </view>
+    <view class="two-item">
+      <view class="item">
+        <view class="title acea-row row-middle">
+          <image src="../../images/tuan.png"></image>
+          <text class="f-22">团购套餐</text>
+        </view>
+        <view class="acea-row content">
+          <view class="content-l">
+            <view class="pictrue">
+              <image src="../../images/goodImg2.png"></image>
+            </view>
+          </view>
+          <view class="content-r acea-row row-between-wrapper">
+            <view class="text">
+              <view>2人套餐</view>
+              <view class="font-6 onelist-hidden f-24">鸳鸯锅底、精品肥牛（小份...</view>
+              <view class="font-6  f-20">使用日期：2019-7-1至2019-7-4</view>
+              <view class="price">
+                ￥
+                <text class="f-48 f-w">98</text>
+                <text class="line-price font-6">￥158</text>
+              </view>
+            </view>
+            <view class="btn" bindtap="goTuanGouDetail">抢购</view>
+          </view>
+        </view>
+        <view class="acea-row content">
+          <view class="content-l">
+            <view class="pictrue">
+              <image src="../../images/goodImg2.png"></image>
+            </view>
+          </view>
+          <view class="content-r acea-row row-between-wrapper">
+            <view class="text">
+              <view>2人套餐</view>
+              <view class="font-6 onelist-hidden f-24">鸳鸯锅底、精品肥牛（小份...</view>
+              <view class="font-6  f-20">使用日期：2019-7-1至2019-7-4</view>
+              <view class="price">
+                ￥
+                <text class="f-48 f-w">158</text>
+                <text class="line-price font-6">￥281</text>
+              </view>
+            </view>
+            <view class="btn" bindtap="goTuanGouDetail">抢购</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="three-item">
+      <view class="item">
+        <view class="title acea-row row-middle">
+          <image src="../../images/zeng.png"></image>
+          <text class="f-22">赠品券</text>
+        </view>
+        <view class="acea-row content">
+          <view class="content-l">
+            <view class="pictrue">
+              <image src="../../images/goodImg2.png"></image>
+            </view>
+          </view>
+          <view class="content-r acea-row row-between-wrapper">
+            <view class="text">
+              <view>赠品</view>
+              <view class="font-6 onelist-hidden f-24">送特色小吃或精美礼品一份</view>
+              <view class="font-6  f-20">使用日期：2019-7-1至2019-7-4</view>
+            </view>
+            <view class="btn" bindtap="goCouponDetail">抢购</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 评价 -->
+  <view class="evaluate b-f" wx:if="{{status==1}}">
+    <view class="item acea-row">
+      <view class="pictrue">
+        <image src="../../images/avatar.png"></image>
+      </view>
+      <view class="text">
+        <view class="text-top acea-row row-between-wrapper">
+          <view class="f-w">CangQiong</view>
+          <view class="f-24 font-6">2019-7-12</view>
+        </view>
+        <view class="f-26 font-6">整体描述：第一次买是因为是张艺兴代言的 所以抱着试一试的心态，买回来之后发现真的好用，不油腻清爽 效果真的很不错而且每次都会送</view>
+      </view>
+    </view>
+    <view class="item acea-row">
+      <view class="pictrue">
+        <image src="../../images/avatar.png"></image>
+      </view>
+      <view class="text">
+        <view class="text-top acea-row row-between-wrapper">
+          <view class="f-w">刘丽</view>
+          <view class="f-24 font-6">2019-7-12</view>
+        </view>
+        <view class="f-26 font-6">整体描述：不错很好，真的很优惠，希望继续保持，期待出更多的菜品和优惠。 </view>
+        <view class="img-item">
+          <image src="../../images/goodImg2.png"></image>
+        </view>
+        <view class="news">
+          <view class="news-item f-24">
+            <view class="acea-row row-between-wrapper title">
+              <view class="f-w">李明</view>
+              <view class="font-6">2019年7月12日 12:21</view>
+            </view>
+            <view>
+              <text class="font-6">回复</text>
+              <text class="f-w">刘丽: </text>
+              <text class="font-6">商家回复：亲爱的顾客，感谢您选择品尝本店的美食，我们会继续努力，为您提供更多的美食。祝您生活愉快！</text>
+            </view>
+          </view>
+          <view class="news-item f-24">
+            <view class="acea-row row-between-wrapper title">
+              <view class="f-w">刘丽</view>
+              <view class="font-6">2019年7月12日 13:40</view>
+            </view>
+            <view class="font-6">
+              <text>谢谢</text>
+            </view>
+          </view>
+          <view class="news-item f-24">
+            <view class="acea-row row-between-wrapper title">
+              <view class="f-w">李明</view>
+              <view class="font-6">2019年7月12日 13:41</view>
+            </view>
+            <view>
+              <text class="font-6">回复</text>
+              <text class="f-w">刘丽: </text>
+              <text class="font-6">不客气的呢，欢迎常来</text>
+            </view>
+          </view>
+          <view class="triangle"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 商家 -->
+  <view class="store" wx:if="{{status==2}}">
+    <view class="album b-f">
+      <view class="title">店铺相册</view>
+      <view class='scroll-album'>
+        <scroll-view scroll-x style="width: 100%" class="image-group">
+          <block wx:for="{{albumList}}" wx:key>
+            <image src='{{item.pic}}'></image>
+          </block>
+        </scroll-view>
+      </view>
+    </view>
+    <view class="message b-f">
+      <view>商家电话： 029-2356-5264</view>
+      <view class="acea-row row-between-wrapper">
+        <text>店铺地址： 陕西省西安市高新区科技路...</text>
+        <image src="../../images/location.png" class="icon" bindtap='getLocation'></image>
+      </view>
+      <view>营业时间： 6:30-10:30； 17:30-19:30</view>
+      <view>行业分类： 餐饮业 / 火锅</view>
+    </view>
+    <view class="service b-f">
+      <view class="title">商家服务</view>
+      <view class="f-24 font-6">该商家食品安全已经通过食品品鉴管理局检测，食品安全有保障</view>
+    </view>
+    <view class="qualifications b-f acea-row row-between-wrapper">
+      <view>营业资质</view>
+      <view class="iconfont icon-xiala"></view>
+    </view>
+    <view class="code">
+      <image src="../../images/code.png"></image>
+      <view class="font-6">扫码可关注商家</view>
+    </view>
+  </view>
+
+</view>

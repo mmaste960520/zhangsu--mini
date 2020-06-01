@@ -1,0 +1,142 @@
+<view>
+  <view class="coupon_title">100元代金券</view>
+  <view class="coupon_info">
+    <view class="info">
+      <view class="title">美味海鲜粥美味海（长安区店）</view>
+      <view class="price">￥50</view>
+      <view class="vipPrice">会员价 <text>￥40元</text></view>
+    </view>
+    <view class="useTime">
+      周一至周日可用
+      <view class="radius"></view>
+    </view>
+  </view>
+
+  <view class="useRule">
+    <view class="title">使用规则</view>
+    <view class="rule">
+      <text>1、不限张数，随时可领取</text>
+      <text>2、使用时间：周一至周日营业时间可用</text>
+      <text>3、使用范围：除锅底酒水，料碗，饮料外全场通用</text>
+      <text>4、使用时间：周一至周日营业时间可用</text>
+    </view>
+    <view class="moreRule" bindtap="">更多规则<text class="iconfont icon-xiala"></text></view>
+  </view>
+
+  <view class="useRule">
+    <view class="title">商家介绍</view>
+    <view class="acea-row row-middle">
+      <image src="../../images/goodImg2.png" class="goodsImg"  bindtap="goStoreDetail"></image>
+      <view class="shop_info">
+        <view  bindtap="goStoreDetail" class="onelist-hidden">美味海鲜粥美味海（长安区店）</view>
+        <view class="location clearfix">
+          <image src="../../images/location.png"></image>
+          <button bindtap='getLocation' class="onelist-hidden">{{address}}</button>
+          <image src="../../images/tel1.png" bindtap="call"></image>
+        </view>
+        <button class="followShop" bindtap="follow">{{follow==0?'关注店铺':'已关注'}}</button>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="tips">领取成功之后，可在我的“卡卷”中查看</view>
+  
+  <view style="height: 100rpx; width: auto;"></view>
+  <!-- 快捷导航 -->
+  <bottomNav id=""></bottomNav>
+
+  <!-- 弹窗 -->
+  <view class="mask" wx:if="{{ispopup}}" bindtap='close'></view>
+
+  <!-- 优惠卷 领取成功 -->
+  <view class="success" wx:if="{{ispopup&&show==1}}">
+    <view class="closeBut">
+      <image src="../../images/close1.png" bindtap='close'></image>
+    </view>
+    <view class="title">领取成功</view>
+    <view class="title2">可到我的“卡券”中查看</view>
+    <view class="goSee" bindtap="goCouponList">立即查看</view>
+  </view>
+
+  <!-- 优惠卷 您的机会已用完，提示开通会员 -->
+  <view class="popup" wx:if="{{ispopup&&show==2}}">
+    <view class="closeBut">
+      <image src="../../images/close1.png"></image>
+    </view>
+    <view class="title">领取成功</view>
+    <view class="title2">可到我的“卡券”中查看</view>
+    <view class="goSee" bindtap="goCouponList">立即查看</view>
+    <view class="coupon-list clearfix">
+      <view class="popupTips">您的机会已耗尽,开通会员可领取4次大额优惠券</view>
+      <view class="item active">
+        <view class="price">
+          <text>5</text>元
+        </view>
+        <view class="sub">可领取4张100以内</view>
+        <view class="coupon">优惠券</view>
+      </view>
+      <view class="item">
+        <view class="price">
+          <text>10</text>元
+        </view>
+        <view class="sub">可领取4张200以内</view>
+        <view class="coupon">优惠券</view>
+      </view>
+      <view class="item">
+        <view class="price">
+          <text>30</text>元
+        </view>
+        <view class="sub">可领取4张平台全部</view>
+        <view class="coupon">优惠券</view>
+      </view>
+    </view>
+    <view class="btn">
+      <view>立即开通</view>
+    </view>
+  </view>
+
+  <!-- 优惠卷 详情 立即领取点击后 充值会员 -->
+  <view class="rechargeVip"  wx:if="{{ispopup&&show==3}}">
+    <view class="userInfo acea-row row-middle">
+      <image src="../../images/avatar.png" class="userPortrait"></image>
+      <view>
+        <view>154895655(155....8547)</view>
+        <text>您还不是会员暂时无法领取，可立即开通</text>
+      </view>
+    </view>
+    <view class="vipList clearfix">
+      <view class="item active">
+        <view class="openPrice">￥<text>5</text></view>
+        <view class="historyPrice">￥15</view>
+        <view class="vipTips">可领取100元以内</view>
+        <view class="vipTips">优惠券</view>
+        <view class="vipLevel">VIP1</view>
+      </view>
+
+      <view class="item">
+        <view class="recommend">推荐</view>
+        <view class="openPrice">￥<text>10</text></view>
+        <view class="historyPrice">￥23</view>
+        <view class="vipTips">可领取200元以内</view>
+        <view class="vipTips">优惠券</view>
+        <view class="vipLevel">VIP2</view>
+      </view>
+
+      <view class="item">
+        <view class="openPrice">￥<text>30</text></view>
+        <view class="historyPrice">￥45</view>
+        <view class="vipTips" style="margin: 32rpx 0;">可全部领取</view>
+        <view class="vipLevel">VIP3</view>
+      </view>
+    </view>
+    <view class="tagging">
+      可领取4张100元以内优惠券(1个月)
+    </view>
+    <view class="btn">
+      <view>立即开通</view>
+    </view>
+  </view>
+
+</view>

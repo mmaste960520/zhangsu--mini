@@ -1,0 +1,192 @@
+<!--pages/more_classify/index.wxml-->
+<view class="more-classify">
+  <!-- 导航 -->
+  <view class="header">
+    <scroll-view scroll-x scroll-left>
+      <view class="cs {{ item.category_id == category_id ? 'active' : '' }} acea-row row-center" data-id="0" wx:for="{{ categoryList }}" wx:key="this" bindtap="onclickNar">
+        <text>{{item.name}}</text>
+        <text class="iconfont icon-xiala" wx:if="{{item.category_id ==  0}}"  bindtap="onclick"></text>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 列表 -->
+  <view class="category-list">
+    <view class="category-item acea-row">
+      <view class="picture">
+        <image src="../../images/goodImg1.png"></image>
+      </view>
+      <view class="text-r">
+        <view class="title">
+          慕凡造型（长安区店）
+          <image src="../../images/quan.png"></image>
+        </view>
+        <view class="sub acea-row row-between-wrapper">
+          <view>本店理发师手艺好，环境良好</view>
+          <view>562m</view>
+        </view>
+        <view class="text-r-bottom acea-row row-between-wrapper">
+          <view class="item-l">
+            <view class="item-l-title">￥
+              <text class="f-32 f-w">20</text>
+            </view>
+            <view class="item-l-sub">满199减20</view>
+            <view class="item-l-date">使用日期：2019-7-1至2019-7-4</view>
+          </view>
+          <view class="item-btn" bindtap="goCouponDetail">免费领取</view>
+          <view class="circle circle1"></view>
+          <view class="circle circle2"></view>
+        </view>
+      </view>
+    </view>
+    <view class="category-item acea-row">
+      <view class="picture">
+        <image src="../../images/goodImg1.png"></image>
+      </view>
+      <view class="text-r">
+        <view class="title">
+          慕凡造型（长安区店）
+          <image src="../../images/zhe.png"></image>
+        </view>
+        <view class="sub acea-row row-between-wrapper">
+          <view>本店理发师手艺好，环境良好</view>
+          <view>562m</view>
+        </view>
+        <view class="text-r-bottom acea-row row-between-wrapper">
+          <view class="item-l">
+            <view class="item-l-title">￥
+              <text class="f-32 f-w">8折</text>
+            </view>
+            <view class="item-l-sub">全场8折优惠，立即抢购</view>
+            <view class="item-l-date">使用日期：2019-7-1至2019-7-4</view>
+          </view>
+          <view class="item-btn" bindtap="goCouponDetail">免费领取</view>
+          <view class="circle circle1"></view>
+          <view class="circle circle2"></view>
+        </view>
+      </view>
+    </view>
+    <view class="category-item acea-row">
+      <view class="picture">
+        <image src="../../images/goodImg1.png"></image>
+      </view>
+      <view class="text-r">
+        <view class="title">
+          慕凡造型（长安区店）
+          <image src="../../images/dai.png"></image>
+        </view>
+        <view class="sub acea-row row-between-wrapper">
+          <view>本店理发师手艺好，环境良好</view>
+          <view>562m</view>
+        </view>
+        <view class="text-r-bottom acea-row row-between-wrapper">
+          <view class="item-l">
+            <view class="item-l-title">
+              <text class="f-32 f-w">100元代金券</text>
+            </view>
+            <view class="item-l-sub"></view>
+            <view class="item-l-date">使用日期：2019-7-1至2019-7-4</view>
+            <view class="item-l-title">￥
+              <text class="f-w f-32">50</text>
+            </view>
+          </view>
+          <view class="item-btn" bindtap="goCouponDetail">免费领取</view>
+          <view class="circle circle1"></view>
+          <view class="circle circle2"></view>
+        </view>
+      </view>
+    </view>
+    <view class="category-item acea-row">
+      <view class="picture">
+        <image src="../../images/goodImg1.png"></image>
+      </view>
+      <view class="text-r">
+        <view class="title">
+          慕凡造型（长安区店）
+          <image src="../../images/tuan.png"></image>
+          <image src="../../images/vip.png" class="vip-img" mode="widthFix"></image>
+        </view>
+        <view class="sub acea-row row-between-wrapper">
+          <view>本店理发师手艺好，环境良好</view>
+          <view>562m</view>
+        </view>
+        <view class="text-r-bottom acea-row row-between-wrapper">
+          <view class="item-l">
+            <view class="item-l-title">
+              <text class="f-w f-32">2人护理吹烫套餐</text>
+            </view>
+            <view class="item-l-sub"></view>
+            <view class="item-l-date">使用日期：2019-7-1至2019-7-4</view>
+            <view class="item-l-title">￥
+              <text class="f-w f-32">98</text>
+              <text class="line-price">￥158</text>
+            </view>
+          </view>
+          <view class="item-btn" bindtap="goTuanGouDetail">免费领取</view>
+          <view class="circle circle1"></view>
+          <view class="circle circle2"></view>
+        </view>
+      </view>
+    </view>
+    <view class="category-item acea-row">
+      <view class="picture">
+        <image src="../../images/goodImg1.png"></image>
+      </view>
+      <view class="text-r">
+        <view class="title">
+          慕凡造型（长安区店）
+          <image src="../../images/zeng.png"></image>
+        </view>
+        <view class="sub acea-row row-between-wrapper">
+          <view>本店理发师手艺好，环境良好</view>
+          <view>562m</view>
+        </view>
+        <view class="text-r-bottom acea-row row-between-wrapper">
+          <view class="item-l">
+            <view class="item-l-title">
+              <text class="f-32 f-w">赠品</text>
+            </view>
+            <view class="item-l-sub">免费洗头</view>
+            <view class="item-l-date">使用日期：2019-7-1至2019-7-4</view>
+          </view>
+          <view class="item-btn" bindtap="goCouponDetail">免费领取</view>
+          <view class="circle circle1"></view>
+          <view class="circle circle2"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 更多 -->
+  <view class="more acea-row row-center">
+    <text>更多</text>
+    <text class='iconfont icon-xiala'></text>
+  </view>
+  <view class="mask" hidden='{{select}}' bindtap='close'></view>
+  <!-- 弹窗 -->
+  <view class="popup b-f" hidden='{{select}}'>
+    <view class="popup-list">
+      <view class="item">
+        <view class="title">附近</view>
+        <view class="item-list acea-row row-between-wrapper">
+          <view class="item-list-content">3公里</view>
+          <view class="item-list-content">5公里</view>
+          <view class="item-list-content">10公里</view>
+          <view class="item-list-content">市区</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="title">品类</view>
+        <view class="item-list acea-row row-between-wrapper">
+          <view class="item-list-content">满减券</view>
+          <view class="item-list-content">打折券</view>
+          <view class="item-list-content">团购券</view>
+          <view class="item-list-content">代金券</view>
+          <view class="item-list-content">赠品券</view>
+        </view>
+      </view>
+    </view>
+    <view class="item-btn acea-row row-between-wrapper">
+      <view class="reset">重置</view>
+      <view class="complete">完成</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<!-- 商家入驻合同 -->
+<view class="inviteDealer">
+  <view class="inviteDealer-title">
+    <view class="title">商家入驻合同</view>
+    <view class="btn" bindtap="close">关闭</view>
+  </view>
+  <view class="explain">
+    <view class="title">掌速商家入驻合同</view>
+    <view class="sub">为了更好地为拥有优质内容的商家服务以及保障消费者权益，甲乙双方本着甲、乙双方平等合作、互惠互利的原则，在符合相关法律法规，不违反市场竞争的情况下，甲方须遵循乙方的运营管理规范，经友好协商，甲乙双方签署以下合同。</view>
+    <view class="item">
+      <view>一、合作内容</view>
+      <view>甲方在乙方在有哒微信平台创造店铺进行服务、商品销售，乙方提供甲方更好地展现其店铺与商品信息，支付渠道代收货款等技术服务。本协议自甲方店铺在乙方平台上线之日起生效。</view>
+    </view>
+    <view class="item">
+      <view>二、甲方权利与义务</view>
+      <view>1、乙方为甲方提供掌速的网络宣传和在线销售。</view>
+      <view>2、乙方为甲方在消费群体中做相关宣传介绍并进行相关推广，以提升甲方的曝光量。</view>
+      <view>3、乙方为甲方进行相关的资质认证，并将信息展示给乙方平台用户。</view>
+      <view>4、乙方按照《掌速商家服务协议》 ，每月定期将完成交易的代收款支付给予甲方指定的提现帐号。</view>
+    </view>
+  </view>
+</view>

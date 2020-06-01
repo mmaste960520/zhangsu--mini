@@ -1,0 +1,49 @@
+page{background:#F8F6F7;}
+/* 基本信息 */
+.star{color:#CE4E63;}
+.dealer .dealer-item .title{padding: 30rpx;}
+.dealer .dealer-item .title .remark{color: #999;}
+.base .base-item,.shopkeeper-item,.code-item{padding: 0 30rpx;}
+.base .base-item .item,.shopkeeper-item .item,.code-item .item{height:90rpx;border-bottom:1rpx solid #ccc;}
+.base .base-item .item:last-child,.code-item .item:last-child{border-bottom: none;}
+.base .base-item .item .name,.shopkeeper-item .item .name,.code-item .item .name{width:195rpx;color:#333;}
+.base .base-item .item input,.shopkeeper-item .item input,.code-item .item input{width:475rpx;}
+.address input{width:390rpx!important;}
+.address image{width: 60rpx;height: 60rpx;border-left: 2rpx solid #ccc;}
+.industry input{width:420rpx!important;}
+/* 照片上传 */
+.uploadPic{padding: 25rpx 0;}
+.uploadPic .pictrue{width:170rpx;height:170rpx;margin:0 0 0 30rpx;position:relative;font-size:22rpx;background:#F8F6F7}
+.uploadPic .pictrue .icon-jia1{color:#ccc;font-size:70rpx;}
+.q-image-wrap{width: 100%;height: 100%;}
+.q-image-wrap image{width: 100%;height: 100%;}
+/* 文本框 */
+.textarea{background: #fff;padding: 20rpx 30rpx;}
+.textarea textarea{height: 150rpx;}
+/* 审核资料 */
+.shopkeeper .uploadPic{padding-top: 0;}
+.shopkeeper .uploadPic .uploadPic-item{text-align: center;margin-left: 30rpx;}
+.shopkeeper .uploadPic .uploadPic-item .pictrue{margin: 0;width: 200rpx;height: 200rpx;}
+.shopkeeper .uploadPic .uploadPic-item .uploadPic-title{margin-top: 30rpx;}
+.shopkeeper .uploadPic .uploadPic-item .uploadPic-title text{color:#999;}
+/* 邀请码 */
+.code{margin-top: 20rpx;}
+/* 单选 */
+radio .wx-radio-input{border-radius:50%;width:25rpx;height:25rpx;}
+radio .wx-radio-input.wx-radio-input-checked{border: 1px solid #358BEF !important;background-color: #358BEF !important;}
+radio .wx-radio-input.wx-radio-input-checked::before{font-size:26rpx;}
+/* 付费入驻 */
+.pay .radio{padding: 30rpx;width: 100%;}
+.pay .radio .price{color:#CE4E63;}
+.pay .radio .line-price{color:#999;font-size: 22rpx;}
+/* 阅读并同意 */
+.agree{padding: 30rpx;}
+/* 提交 */
+.btn{padding: 0 30rpx 60rpx 30rpx;}
+.btn view{background: #CE4E63;color:#fff;font-size: 34rpx;padding: 30rpx 0;text-align: center;border-radius: 15rpx;}
+/* 弹框 */
+.popup{background:#fff;width: 650rpx;overflow: hidden; position: fixed;top: 50%;z-index: 10000;left: 0;margin: -150px 50rpx 0 50rpx;text-align: center;padding: 50rpx 0 40rpx 0;border-radius: 15rpx;}
+.popup .btn{color:#CE4E63;font-size: 32rpx;position: absolute;top: 45rpx;right: 30rpx;padding: 0;}
+.popup .active{color:#CE4E63;}
+.popup .picker-box{border-top:1px solid #eee;border-bottom:1px solid #eee;}
+.popup .picker-item{line-height: 50px;padding: 0 60rpx;}

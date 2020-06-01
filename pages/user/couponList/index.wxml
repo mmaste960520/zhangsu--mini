@@ -1,0 +1,128 @@
+<view class="coupon">
+  <view class="item acea-row row-between-wrapper">
+    <view class="item-l acea-row">
+      <view class="pictrue">
+        <image src="../../../images/goodImg2.png"></image>
+      </view>
+      <view class="text">
+        <view class="title acea-row row-between-wrapper">
+          <view class="onelist-hidden">美味海鲜粥...</view>
+          <view class='f-22 font-9'>652m</view>
+        </view>
+        <view class="f-22 font-9 onelist-hidden">现时间段人少，有位...</view>
+        <view class="f-20 font-6 time">有效期：2019-7-1至2019-7-4</view>
+      </view>
+    </view>
+    <view class="item-r acea-row row-center-wrapper row-column" bindtap="goMyCoupon" data-id="1">
+      <view class="title f-22">满减券</view>
+      <view class="f-w">
+        ￥
+        <text class="f-48">20</text>
+      </view>
+      <view>到店使用</view>
+    </view>
+    <view class="circle circle1"></view>
+    <view class="circle circle2"></view>
+  </view>
+  <view class="item acea-row row-between-wrapper">
+    <view class="item-l acea-row">
+      <view class="pictrue">
+        <image src="../../../images/goodImg2.png"></image>
+      </view>
+      <view class="text">
+        <view class="title acea-row row-between-wrapper">
+          <view class="onelist-hidden">海鲜粥全场8折...</view>
+          <view class='f-22 font-9'>652m</view>
+        </view>
+        <view class="f-22 font-9 onelist-hidden">现时间段人少，有位...</view>
+        <view class="f-20 font-6 time">有效期：2019-7-1至2019-7-4</view>
+      </view>
+    </view>
+    <view class="item-r acea-row row-center-wrapper row-column" bindtap="goMyCoupon" data-id="1">
+      <view class="title f-22">打折券</view>
+      <view class="f-w">
+        ￥
+        <text class="f-48">8</text>
+        折
+      </view>
+      <view>到店使用</view>
+    </view>
+    <view class="circle circle1"></view>
+    <view class="circle circle2"></view>
+  </view>
+  <view class="item acea-row row-between-wrapper">
+    <view class="item-l acea-row">
+      <view class="pictrue">
+        <image src="../../../images/goodImg2.png"></image>
+      </view>
+      <view class="text">
+        <view class="title acea-row row-between-wrapper">
+          <view class="onelist-hidden">海鲜粥2人团...</view>
+          <view class='f-22 font-9'>652m</view>
+        </view>
+        <view class="f-22 font-9 onelist-hidden">现时间段人少，有位...</view>
+        <view class="f-20 font-6 time">有效期：2019-7-1至2019-7-4</view>
+      </view>
+    </view>
+    <view class="item-r acea-row row-center-wrapper row-column" bindtap="goMyCoupon" data-id="2">
+      <view class="title f-22">团购券</view>
+      <view class="f-w">
+        ￥
+        <text class="f-48">40</text>
+      </view>
+      <view>到店使用</view>
+    </view>
+    <view class="circle circle1"></view>
+    <view class="circle circle2"></view>
+  </view>
+  <view class="item acea-row row-between-wrapper">
+    <view class="item-l acea-row">
+      <view class="pictrue">
+        <image src="../../../images/goodImg2.png"></image>
+      </view>
+      <view class="text">
+        <view class="title acea-row row-between-wrapper">
+          <view class="onelist-hidden">50元代100元券...</view>
+          <view class='f-22 font-9'>652m</view>
+        </view>
+        <view class="f-22 font-9 onelist-hidden">现时间段人少，有位...</view>
+        <view class="f-20 font-6 time">有效期：2019-7-1至2019-7-4</view>
+      </view>
+    </view>
+    <view class="item-r acea-row row-center-wrapper row-column" bindtap="goMyCoupon" data-id="1">
+      <view class="title f-22">代金券</view>
+      <view class="f-w">
+        ￥
+        <text class="f-48">50</text>
+      </view>
+      <view>到店使用</view>
+    </view>
+    <view class="circle circle1"></view>
+    <view class="circle circle2"></view>
+  </view>
+  <view class="item acea-row row-between-wrapper">
+    <view class="item-l acea-row">
+      <view class="pictrue">
+        <image src="../../../images/goodImg2.png"></image>
+      </view>
+      <view class="text">
+        <view class="title acea-row row-between-wrapper">
+          <view class="onelist-hidden">赠送一份小吃</view>
+          <view class='f-22 font-9'>652m</view>
+        </view>
+        <view class="f-22 font-9 onelist-hidden">现时间段人少，有位...</view>
+        <view class="f-20 font-6 time">有效期：2019-7-1至2019-7-4</view>
+      </view>
+    </view>
+    <view class="item-r acea-row row-center-wrapper row-column" bindtap="goMyCoupon" data-id="1">
+      <view class="title f-22">赠品券</view>
+      <view>到店使用</view>
+    </view>
+    <view class="circle circle1"></view>
+    <view class="circle circle2"></view>
+  </view>
+</view>
+<view class="no-more">没有更多优惠券了</view>
+<view class="btn" bindtap="goIndex">
+  <view>去首页领取更多优惠</view>
+</view>

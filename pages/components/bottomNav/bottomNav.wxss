@@ -1,0 +1,40 @@
+.clearfix:after{
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.bottomNav {
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+}
+.fastBut {
+  /* width: 145rpx; */
+  text-align: center;
+  font-size: 22rpx;
+}
+.fastBut image {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 0 auto;
+}
+.bottomNav .receiveBut {
+  width: 460rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #CE4E63;
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+}
+.bottomNav .bottomNav-l{
+  width: 290rpx;
+  padding: 0 50rpx;
+}

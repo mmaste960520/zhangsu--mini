@@ -1,0 +1,147 @@
+<!--pages/joinMember/index.wxml-->
+<view class="join-member">
+  <!-- 顶部 -->
+  <view class="header">
+    <view class="header-item acea-row row-middle">
+      <view class='pictrue'>
+        <image src='../../images/vipavatar.png'></image>
+      </view>
+      <view class="text">
+        <view class="name">154895655(155....8547)</view>
+        <view class="sub f-22">您还不是会员哦，可立即开通</view>
+      </view>
+    </view>
+    <view class="header-title">
+      <view class="title1 f-32">开通会员</view>
+      <view class="title2 f-48">每月最高领
+        <text>￥300</text> 专属优惠
+      </view>
+      <view class="title3 f-32">还可享3大会员专属特权</view>
+    </view>
+  </view>
+  <!-- 开通会员 -->
+  <view class="openVip">
+    <view class="item-list acea-row row-between-wrapper">
+      <view class="item active">
+        <view class="vip-title">VIP1</view>
+        <view class="price">
+          ￥
+          <text class="f-48">5</text>
+          <text class="line-price">￥15</text>
+        </view>
+        <view class="sub twolist-hidden">可领取100元以内优惠券</view>
+        <view class="btn">立即开通</view>
+      </view>
+      <view class="item">
+        <view class="vip-title">VIP2</view>
+        <view class="price">
+          ￥
+          <text class="f-48">10</text>
+          <text class="line-price">￥23</text>
+        </view>
+        <view class="sub twolist-hidden">可领取200元以内优惠券</view>
+        <view class="btn">立即开通</view>
+        <image src="../../images/recom.png" mode="widthFix" class="icon"></image>
+      </view>
+      <view class="item">
+        <view class="vip-title">VIP3</view>
+        <view class="price">
+          ￥
+          <text class="f-48">30</text>
+          <text class="line-price">￥45</text>
+        </view>
+        <view class="sub twolist-hidden" style="padding-top:20rpx;">可全部领取</view>
+        <view class="btn">立即开通</view>
+      </view>
+    </view>
+    <view class="explain">可领取4张100元以内优惠券(1个月)</view>
+    <view class="share acea-row row-between-wrapper">
+      <view class="share-l">
+        <view class="title f-w">分享送会员</view>
+        <view class="sub f-22">普通会员（￥5元）可通过分享5个好友开通哦</view>
+      </view>
+      <image src="../../images/share.png"></image>
+    </view>
+  </view>
+  <!-- 特权1 -->
+  <view class="privilege one b-f">
+    <view class="title">
+      <text class="title-item">特权1</text>
+      <text class="f-w">每月免费领4张会员优惠券</text>
+    </view>
+    <view class="one-list acea-row row-between-wrapper">
+      <view class="item" style="background-image: url('/images/bg2.png');background-size:100% 100%;">
+        <view class="price">
+          ￥
+          <text class="f-48">5</text>
+        </view>
+        <view class="sub">无门槛</view>
+      </view>
+      <view class="item" style="background-image: url('/images/bg2.png');background-size:100% 100%;">
+        <view class="price">
+          ￥
+          <text class="f-48">5</text>
+        </view>
+        <view class="sub">无门槛</view>
+      </view>
+      <view class="item" style="background-image: url('/images/bg2.png');background-size:100% 100%;">
+        <view class="price">
+          ￥
+          <text class="f-48">5</text>
+        </view>
+        <view class="sub">无门槛</view>
+      </view>
+      <view class="item" style="background-image: url('/images/bg2.png');background-size:100% 100%;">
+        <view class="price">
+          ￥
+          <text class="f-48">5</text>
+        </view>
+        <view class="sub">无门槛</view>
+      </view>
+    </view>
+  </view>
+  <!-- 特权2 -->
+  <view class="privilege two b-f">
+    <view class="title">
+      <text class="title-item">特权2</text>
+      <text class="f-w">下单返奖励金，再兑优惠券</text>
+    </view>
+    <view class="two-list acea-row row-between-wrapper">
+      <view class="item">
+        <view class="f-22">消费3次返优惠券</view>
+        <view style="background-image: url('/images/bg3.png');background-size:100% 100%;height:130rpx;padding:0 10rpx;color:#B30F0F;margin-top:20rpx" class="acea-row row-between-wrapper">
+          <view class="price">
+          ￥
+          <text class="f-48 f-w">5</text>
+          </view>
+          <view class="sub">平台优惠券</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="f-22">消费3次返优惠券</view>
+        <view style="background-image: url('/images/bg3.png');background-size:100% 100%;height:130rpx;padding:0 10rpx;color:#B30F0F;margin-top:20rpx" class="acea-row row-between-wrapper">
+          <view class="price">
+          ￥
+          <text class="f-48 f-w">5</text>
+          </view>
+          <view class="sub">平台优惠券</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 特权3 -->
+  <view class="privilege three b-f">
+    <view class="title">
+      <text class="title-item">特权3</text>
+      <text class="f-w">会员专属客服</text>
+    </view>
+    <view class="three-list">
+      <view class="clock">
+      <image src="../../images/clock.png"></image>
+      </view>
+      <view>会员享有24小时客服专线，配有专属客服，竭诚提供更专业、 更优质都是服务</view>
+    </view>
+  </view>
+  <!-- 更多 -->
+  <view class="more">更多特权开发中  |  会员特权说明</view>
+</view>

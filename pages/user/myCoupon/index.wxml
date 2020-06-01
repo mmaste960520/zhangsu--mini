@@ -1,0 +1,50 @@
+<view class="myCoupon">
+  <view class="myCoupon-content">
+    <view class="content-top acea-row row-column row-middle">
+      <view class="pictrue">
+        <image src="../../../images/logo.png"></image>
+      </view>
+      <view class="f-w" wx:if="{{typeId==1}}">美味海鲜粥美味海鲜粥</view>
+      <view class="f-w" wx:if="{{typeId==2}}">海鲜火锅店2人套餐团购</view>
+      <view class="font-color" wx:if="{{typeId==1}}">100元代金券</view>
+      <view class="code">
+        <image src="../../../images/code.png"></image>
+      </view>
+      <view class="f-32 font-color">
+        {{typeId==1?'优惠码':'团购码'}}：
+        <text class="f-w">4561237890</text>
+      </view>
+      <view class="sub f-20">到店后将此页面出示给店员即可享受优惠</view>
+      <view class="circle circle1"></view>
+      <view class="circle circle2"></view>
+    </view>
+    <view class="content-bottom">
+      <view class="store acea-row">
+        <view class="pictrue">
+          <image src="../../../images/goodImg2.png"></image>
+        </view>
+        <view class="text" wx:if="{{typeId==1}}">
+          <view class="f-w onelist-hidden">美味海鲜粥美味海（长安区店）</view>
+          <view class="adress acea-row row-middle">
+            <image src="../../../images/location.png"></image>
+            <view class="font-6 onelist-hidden detail">高新区...</view>
+            <image src="../../../images/tel1.png" class="tel"></image>
+          </view>
+          <view class="follow">关注店铺</view>
+        </view>
+        <view class="text" wx:if="{{typeId==2}}">
+          <view class="f-w twolist-hidden">美味海鲜粥美味海（长安区店） 2人套餐团购 </view>
+          <view class="font-color">
+            <text class="f-w">券后价：</text>
+            <text class="f-48 f-w">78</text>
+            <text class="line-price font-9 f-24">原价：￥112</text>
+          </view>
+          <view class="time font-9 f-22">使用期限：2019-9.1至2019-9-4</view>
+        </view>
+      </view>
+      <view class="btn">
+        <button open-type="share">赠送好友</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="wechatapp">
+    <view class="header">
+      <open-data class="" type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <view class="auth-title">申请获取以下权限</view>
+  <view class="auth-subtitle">获得你的手机号</view>
+  <!-- <button class="login-btn" openType="getUserInfo" lang="zh_CN" bindgetuserinfo="authorLogin">授权登录</button> -->
+  <button class="login-btn" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/inviteDealer/code/index.wxml-->
+<!-- 邀请商家二维码 -->
+<view class="sweep-code">
+  <view class="share-icon acea-row row-right">
+     <button open-type="share"><text class="iconfont icon-fenxiang-"></text></button>
+  </view>
+  <view class="code">
+    <image src="../../../images/code.png" mode="widthFix"></image>
+  </view>
+  <view class="title">邀请商家扫码/分享，即可入驻</view>
+  <view class="btn">
+    <view>保存图片到手机相册，下次邀请可直接使用</view>
+  </view>
+</view>

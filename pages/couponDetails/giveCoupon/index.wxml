@@ -1,0 +1,115 @@
+<!-- 顶部 -->
+<view class="header">
+  <view class="title">
+    <view>你的好友苍穹赠送你一张优惠券</view>
+  </view>
+  <view class="header-item acea-row">
+    <view class="item-l acea-row">
+      <view class="pictrue">
+        <image src="../../../images/jian.png" wx:if="{{type=='jian'}}"></image>
+        <image src="../../../images/dai2.png" wx:if="{{type=='dai'}}"></image>
+        <image src="../../../images/tuan2.png" wx:if="{{type=='tuan'}}"></image>
+        <image src="../../../images/zhe2.png" wx:if="{{type=='zhe'}}"></image>
+        <image src="../../../images/zeng2.png" wx:if="{{type=='zeng'}}"></image>
+      </view>
+      <view class="text">
+        <view class="onelist-hidden">麻辣小龙虾满减券</view>
+        <view class="f-24 font-9 time">截止时间：2019.9.4</view>
+        <view class="f-24 font-color limit">
+        <text>满199可用</text>
+        </view>
+      </view>
+    </view>
+    <view class="item-r acea-row row-center-wrapper">
+      <view>
+        ￥
+        <text class="f-w f-48">20</text>
+      </view>
+    </view>
+    <view class="circle circle1"></view>
+    <view class="circle circle2"></view>
+  </view>
+</view>
+<view class="store-content acea-row">
+  <view class="pictrue">
+    <image src="../../../images/goodImg2.png"></image>
+  </view>
+  <view class="text">
+    <view class="f-w twolist-hidden">美味海鲜粥美味海鲜粥美味海鲜粥 美味海鲜粥(店铺名)</view>
+    <view class="price">
+      <text class="f-w font-color">券后价：￥</text>
+      <text class="f-w f-48 font-color">180</text>
+      <text class="line-price font-9">原价：￥200</text>
+    </view>
+  </view>
+</view>
+<view class="rule">
+  <view class="f-w font-color">使用规则</view>
+  <view>1、合作灵活，无门槛：支持基于联运、渠道包的监测；</view>
+  <view>2、数据准确，结算及时：提供专属后台查看数据，隔天更新。</view>
+  <view>3、官方平台，价格最优：官方合作平台，信誉高。</view>
+  <view>4、合作灵活，无门槛：支持基于联运、渠道包的监测；</view>
+  <view>5、数据准确，结算及时：提供专属后台查看数据，隔天更新。</view>
+  <view>6、官方平台，价格最优：官方合作平台，信誉高。</view>
+</view>
+<!-- 为您推荐 -->
+<view class="recommend">
+  <view class='title acea-row row-center-wrapper'>
+    <image src="../../../images/zhuangshixian.png" mode="widthFix"></image>
+    <text class='name'>为您推荐</text>
+    <image src="../../../images/zhuangshixian.png" class="tf-180" mode="widthFix"></image>
+  </view>
+  <view class="recommendList acea-row row-between-wrapper">
+    <view class="item">
+      <view class="item-top" style="background-image: url('/images/bg.png');background-size:100% 100%;">
+        <view class="font-color item-top-text">
+          <view class="price">
+            ￥
+            <text>8</text> 折
+          </view>
+          <view class="sub">全场8折</view>
+        </view>
+        <view class="item-top-btn font-color">立即领取</view>
+      </view>
+      <view class="item-bottom">
+        <view class="title twolist-hidden">粥宫粥粥宫粥粥宫粥（长安区店）</view>
+        <view class="range">352m</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-top" style="background-image: url('/images/bg.png');background-size:100% 100%;">
+        <view class="font-color item-top-text">
+          <view class="price">
+            ￥
+            <text>20</text>
+          </view>
+          <view class="sub">满199可使用</view>
+        </view>
+        <view class="item-top-btn font-color">立即领取</view>
+      </view>
+      <view class="item-bottom">
+        <view class="title twolist-hidden">粥宫粥粥宫粥粥宫粥（长安区店）</view>
+        <view class="range">352m</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-top" style="background-image: url('/images/bg.png');background-size:100% 100%;">
+        <view class="font-color item-top-text">
+          <view class="price">
+            ￥
+            <text>78</text>
+          </view>
+          <view class="sub">团购价</view>
+          <view class="line-price">原价：￥112</view>
+        </view>
+        <view class="item-top-btn font-color">立即领取</view>
+      </view>
+      <view class="item-bottom">
+        <view class="title twolist-hidden">粥宫粥粥宫粥粥宫粥（长安区店）</view>
+        <view class="range">352m</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 快捷导航 -->
+<bottomNav id=""></bottomNav>

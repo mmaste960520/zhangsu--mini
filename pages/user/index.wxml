@@ -1,0 +1,139 @@
+<!--pages/user/index.wxml-->
+<view class="user">
+  <!-- 顶部个人信息 -->
+  <view class="header b-f">
+    <view class="header-item acea-row row-middle">
+      <view class='pictrue'>
+        <image src='../../images/avatar.png'></image>
+      </view>
+      <view class="text">
+        <view class="name acea-row row-bottom">
+          <text class="onelist-hidden title">苍穹521</text>
+          <image src="../../images/vip2.png" mode="widthFix"></image>
+          <text class="time">（VIP到期时间：2019.12.8)</text>
+        </view>
+        <view class="code">邀请码：1334567890</view>
+      </view>
+    </view>
+  </view>
+  <!-- 加入会员 -->
+  <view class="join" bindtap="goJoinMember">
+    <view class="join-item acea-row row-between-wrapper">
+      <view class="title">加入会员</view>
+      <view class="content">加入会员,每月可多领20元优惠券</view>
+    </view>
+  </view>
+  <!-- 推荐使用 -->
+  <view class="recommend-use">
+    <view class="title">推荐使用</view>
+    <view class="setup_list clear">
+      <view class="setup_list_content">
+        <navigator url='/pages/follow/index' hover-class="none">
+          <view class="setup_list_img">
+            <image src="../../images/user/user1.png"></image>
+          </view>
+          <text>关注</text>
+        </navigator>
+      </view>
+      <view class="setup_list_content">
+        <navigator url='/pages/user/couponList/index' hover-class="none">
+          <view class="setup_list_img">
+            <image src="../../images/user/user2.png"></image>
+          </view>
+          <text>卡券</text>
+        </navigator>
+      </view>
+      <view class="setup_list_content">
+        <navigator url='/pages/inviteDealer/index' hover-class="none">
+          <view class="setup_list_img">
+            <image src="../../images/user/user3.png"></image>
+          </view>
+          <text>邀请商家</text>
+        </navigator>
+      </view>
+      <view class="setup_list_content">
+        <navigator url='/pages/inviteDealer/dealer/index' hover-class="none">
+          <view class="setup_list_img">
+            <image src="../../images/user/user4.png"></image>
+          </view>
+          <text>商家入驻 </text>
+        </navigator>
+      </view>
+      <view class="setup_list_content">
+        <navigator url='' hover-class="none">
+          <view class="setup_list_img">
+            <image src="../../images/user/user5.png"></image>
+          </view>
+          <text>意见反馈</text>
+        </navigator>
+      </view>
+      <view class="setup_list_content">
+        <navigator url='' hover-class="none">
+          <view class="setup_list_img">
+            <image src="../../images/user/user6.png"></image>
+          </view>
+          <text>关于掌速</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 为您推荐 -->
+  <view class="recommend">
+    <view class='title acea-row row-center-wrapper'>
+      <image src="../../images/zhuangshixian.png" mode="widthFix"></image>
+      <text class='name'>为您推荐</text>
+      <image src="../../images/zhuangshixian.png" class="tf-180" mode="widthFix"></image>
+    </view>
+    <view class="recommendList acea-row row-between-wrapper">
+      <view class="item">
+        <view class="item-top">
+          <view class="font-color item-top-text">
+            <view class="price">
+              ￥
+              <text>8</text> 折
+            </view>
+            <view class="sub">全场8折</view>
+          </view>
+          <view class="item-top-btn font-color" bindtap="goCouponDetail">立即领取</view>
+        </view>
+        <view class="item-bottom">
+          <view class="title twolist-hidden">粥宫粥粥宫粥粥宫粥（长安区店）</view>
+          <view class="range">352m</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="item-top">
+          <view class="font-color item-top-text">
+            <view class="price">
+              ￥
+              <text>20</text>
+            </view>
+            <view class="sub">满199可使用</view>
+          </view>
+          <view class="item-top-btn font-color" bindtap="goCouponDetail">立即领取</view>
+        </view>
+        <view class="item-bottom">
+          <view class="title twolist-hidden">粥宫粥粥宫粥粥宫粥（长安区店）</view>
+          <view class="range">352m</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="item-top">
+          <view class="font-color item-top-text">
+            <view class="price">
+              ￥
+              <text>78</text>
+            </view>
+            <view class="sub">团购价</view>
+            <view class="line-price">原价：￥112</view>
+          </view>
+          <view class="item-top-btn font-color" bindtap="goTuanGouDetail">立即领取</view>
+        </view>
+        <view class="item-bottom">
+          <view class="title twolist-hidden">粥宫粥粥宫粥粥宫粥（长安区店）</view>
+          <view class="range">352m</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

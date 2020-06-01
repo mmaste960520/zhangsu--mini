@@ -1,0 +1,12 @@
+
+/* 二维码 */
+page{background: #F8F6F7;}
+.sweep-code{text-align: center;}
+.sweep-code .share-icon{color:#CE4E63;padding: 20rpx 30rpx;}
+.sweep-code .share-icon button{background:transparent;}
+.sweep-code .share-icon .iconfont{font-size: 55rpx;color:#CE4E63;}
+.sweep-code .code{padding: 0 100rpx;}
+.sweep-code .code image{width: 100%}
+.sweep-code .title{font-size: 32rpx;color:#333;margin-top: 40rpx;}
+.sweep-code .btn{padding: 80rpx 30rpx 180rpx 30rpx;}
+.sweep-code .btn view{background: #CE4E63;color:#fff;padding: 20rpx ;text-align: center;border-radius: 15rpx;}

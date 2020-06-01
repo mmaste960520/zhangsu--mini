@@ -1,0 +1,15 @@
+<view>
+  <view class="bottomNav acea-row row-middle clearfix">
+    <view class="bottomNav-l acea-row row-between-wrapper">
+      <view class="fastBut" bindtap="goIndex">
+        <image src="../../../images/home.png"></image> 首页
+      </view>
+      <button open-type="contact">
+        <view class="fastBut">
+          <image src="../../../images/kefu.png"></image>客服
+        </view>
+      </button>
+    </view>
+    <view class="receiveBut">免费领取</view>
+  </view>
+</view>

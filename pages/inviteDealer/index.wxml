@@ -1,0 +1,23 @@
+<!--pages/inviteDealer/index.wxml-->
+<!-- 邀请商家说明 -->
+<view class="inviteDealer">
+  <view class="inviteDealer-title">
+    <view class="title">邀请商家说明</view>
+    <view class="btn" bindtap="goCode">同意</view>
+  </view>
+  <view class="explain">
+    <view class="title">邀请商家说明</view>
+    <view class="sub">为了更好地为拥有优质内容的商家服务以及保障消费者权益，我们扩展了外地的商家也可入驻我们的小程序，加入平台可以享受更多优惠：</view>
+    <view class="item">
+      <view>一、会员推广奖励</view>
+      <view>1、邀请新店主得100元奖励；</view>
+    </view>
+    <view class="item">
+      <view>二、商家权益</view>
+      <view>1、不收商家佣金，免费推广店铺；</view>
+      <view>2、可免费发放优惠券；</view>
+      <view>3、不收商家佣金，免费推广店铺；</view>
+      <view>4、可免费发放优惠券；</view>
+    </view>
+  </view>
+</view>

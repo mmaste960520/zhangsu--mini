@@ -1,0 +1,8 @@
+/* pages/follow/index.wxss */
+.follow{margin: 0 30rpx;}
+.follow .item{background: #fff;margin-top: 20rpx;padding: 20rpx;}
+.follow .item .picture{width: 150rpx;height: 150rpx;}
+.follow .item .picture image{width: 100%;height: 100%;border-radius: 15rpx;}
+.follow .item .text{margin-left: 20rpx;width: 480rpx;}
+.follow .item .text .text-top .range{color:#999;font-size: 24rpx;}
+.follow .item .text .address{width: 380rpx;margin-top: 30rpx;color: #666;}

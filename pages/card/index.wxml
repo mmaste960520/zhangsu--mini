@@ -1,0 +1,89 @@
+<view>
+  <!-- 已开通 -->
+  <view class="userInfo acea-row row-middle" style="display: none;">
+    <image src="../../images/avatar.png" class="userPortrait"></image>
+    <view>
+      <view>心情（微信名）</view>
+      <text>您已经是掌速卡会员了，可立即领取哦</text>
+    </view>
+  </view>
+
+  <!-- 未开通 -->
+  <view class="vip_crad">
+    <view class="opening">
+      <text>您还没有开通掌速会员，无法享受特权</text>
+      <button bindtap="goOpenVip">立即开通</button>
+    </view>
+    <im
+age src="../../images/vip_crad.png" mode="widthFix"></image>
+  </view>
+  <view class="acea-row row-middle">
+    <view class="class_nav">
+      <view class="on">餐饮</view>
+      <view>娱乐</view>
+      <view>服装</view>
+      <view>酒店</view>
+      <view>KTV</view>
+      <view>酒店</view>
+    </view>
+    <view>
+      <image src="../../images/search_but.png" class="search_but"></image>
+    </view>
+    <!-- <view class="section">
+      <input placeholder="这是一个可以自动聚焦的input" auto-focus/>
+    </view> -->
+  </view>
+
+  <view class="goods_list">
+    <view class="acea-row row-middle"  bindtap="goTuanGouDetail">
+      <image src="../../images/goodImg1.png" class="goods_img"></image>
+      <view class="goodsName">
+        <view class="title">
+          粥宫粥（长安区店）
+          <text>210m</text>
+        </view>
+        <view class="goodsInfo">麻辣小龙虾2人套餐团购麻辣小龙虾2人...</view>
+        <view class="endTime">结束时间：2019-10-8 12:00</view>
+        <view class="price">
+          <text>￥49</text>
+          <text class="rmb">￥98</text>
+        </view>
+        <button class="freeBut">免费领取</button>
+      </view>
+    </view>
+
+    <view class="acea-row row-middle"  bindtap="goTuanGouDetail">
+      <image src="../../images/goodImg2.png" class="goods_img"></image>
+      <view class="goodsName">
+        <view class="title">
+          粥宫粥（长安区店）
+          <text>210m</text>
+        </view>
+        <view class="goodsInfo">麻辣小龙虾2人套餐团购麻辣小龙虾2人...</view>
+        <view class="endTime">结束时间：2019-10-8 12:00</view>
+        <view class="price">
+          <text>￥49</text>
+          <text class="rmb">￥98</text>
+        </view>
+        <button class="freeBut">免费领取</button>
+      </view>
+    </view>
+
+    <view class="acea-row row-middle"  bindtap="goTuanGouDetail">
+      <image src="../../images/goodImg1.png" class="goods_img"></image>
+      <view class="goodsName">
+        <view class="title">
+          粥宫粥（长安区店）
+          <text>210m</text>
+        </view>
+        <view class="goodsInfo">麻辣小龙虾2人套餐团购麻辣小龙虾2人...</view>
+        <view class="endTime">结束时间：2019-10-8 12:00</view>
+        <view class="price">
+          <text>￥49</text>
+          <text class="rmb">￥98</text>
+        </view>
+        <button class="freeBut">免费领取</button>
+      </view>
+    </view>
+  </view>
+</view>
